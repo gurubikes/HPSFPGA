@@ -1,0 +1,86 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:\altera\workspace\HPSFPGA --output-directory=C:\altera\workspace\HPSFPGA\HPSFPGA --report-file=bsf:C:\altera\workspace\HPSFPGA\HPSFPGA\HPSFPGA.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\altera\workspace\HPSFPGA\HPSFPGA.qsys --remove-qsys-generate-warning
+Progress: Loading HPSFPGA/HPSFPGA.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding led [altera_avalon_pio 14.1]
+Progress: Parameterizing module led
+Progress: Adding sw [altera_avalon_pio 14.1]
+Progress: Parameterizing module sw
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HPSFPGA.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: HPSFPGA.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: HPSFPGA.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: HPSFPGA.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: HPSFPGA.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: HPSFPGA.hps_0: hps_0.hps_io must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\altera\workspace\HPSFPGA --output-directory=C:\altera\workspace\HPSFPGA\HPSFPGA\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\altera\workspace\HPSFPGA\HPSFPGA\HPSFPGA.html --report-file=sopcinfo:C:\altera\workspace\HPSFPGA\HPSFPGA.sopcinfo --report-file=cmp:C:\altera\workspace\HPSFPGA\HPSFPGA\HPSFPGA.cmp --report-file=qip:C:\altera\workspace\HPSFPGA\HPSFPGA\synthesis\HPSFPGA.qip --report-file=svd:C:\altera\workspace\HPSFPGA\HPSFPGA\synthesis\HPSFPGA.svd --report-file=regmap:C:\altera\workspace\HPSFPGA\HPSFPGA\synthesis\HPSFPGA.regmap --report-file=xml:C:\altera\workspace\HPSFPGA\HPSFPGA\HPSFPGA.xml --report-file=debuginfo:C:\altera\workspace\HPSFPGA\HPSFPGA\synthesis\HPSFPGA.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\altera\workspace\HPSFPGA\HPSFPGA.qsys --remove-qsys-generate-warning --language=VHDL
+Progress: Loading HPSFPGA/HPSFPGA.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding led [altera_avalon_pio 14.1]
+Progress: Parameterizing module led
+Progress: Adding sw [altera_avalon_pio 14.1]
+Progress: Parameterizing module sw
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HPSFPGA.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: HPSFPGA.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: HPSFPGA.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: HPSFPGA.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: HPSFPGA.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: HPSFPGA.hps_0: hps_0.hps_io must be exported, or connected to a matching conduit.
+Info: HPSFPGA: Generating HPSFPGA "HPSFPGA" for QUARTUS_SYNTH
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "HPSFPGA" instantiated altera_hps "hps_0"
+Info: led: Starting RTL generation for module 'HPSFPGA_led'
+Info: led:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HPSFPGA_led --dir=C:/Users/gregorys/AppData/Local/Temp/alt6693_5875939670990665921.dir/0001_led_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/gregorys/AppData/Local/Temp/alt6693_5875939670990665921.dir/0001_led_gen//HPSFPGA_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'HPSFPGA_led'
+Info: led: "HPSFPGA" instantiated altera_avalon_pio "led"
+Info: sw: Starting RTL generation for module 'HPSFPGA_sw'
+Info: sw:   Generation command is [exec C:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.1/quartus/bin64/perl/lib -I C:/altera/14.1/quartus/sopc_builder/bin/europa -I C:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.1/quartus/sopc_builder/bin -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HPSFPGA_sw --dir=C:/Users/gregorys/AppData/Local/Temp/alt6693_5875939670990665921.dir/0002_sw_gen/ --quartus_dir=C:/altera/14.1/quartus --verilog --config=C:/Users/gregorys/AppData/Local/Temp/alt6693_5875939670990665921.dir/0002_sw_gen//HPSFPGA_sw_component_configuration.pl  --do_build_sim=0  ]
+Info: sw: Done RTL generation for module 'HPSFPGA_sw'
+Info: sw: "HPSFPGA" instantiated altera_avalon_pio "sw"
+Info: mm_interconnect_0: "HPSFPGA" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "HPSFPGA" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: sw_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sw_s1_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: sw_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sw_s1_agent"
+Info: sw_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sw_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/altera/workspace/HPSFPGA/HPSFPGA/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sw_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sw_s1_burst_adapter"
+Info: Reusing file C:/altera/workspace/HPSFPGA/HPSFPGA/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/altera/workspace/HPSFPGA/HPSFPGA/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/altera/workspace/HPSFPGA/HPSFPGA/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: HPSFPGA: Done "HPSFPGA" with 21 modules, 76 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

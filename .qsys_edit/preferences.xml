@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="159" />
+   <export preferredWidth="183" />
+   <description preferredWidth="250" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library/Processors and Peripherals,Library,Library/Interface Protocols,Library/Processors and Peripherals/Embedded Processors,Library/Processors and Peripherals/Hard Processor Systems,Library/Processors and Peripherals/Peripherals" />
+ <window width="1698" height="1068" x="1671" y="-9" />
+ <generation synthesis="VHDL" />
+</preferences>
